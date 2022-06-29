@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url("./images/Ylro8y6-gryffindor-wallpaper.jpg");
+    font-family: 'Amiri', serif;
+    color:azure;
+}
+body,
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header {
+    margin-bottom: 2rem;
+}
+.title {
+    font-weight: 700;
+    font-style: italic;
+    line-height: 2;
+}
+.button {
+    width: 200px;
+    height: 200px;
+    border: none;
+}
+.button:hover {
+    cursor: pointer;
+}
+#Rock {
+    background: url("./images/Sphere-Stone-Sphere-Stone-Png-Rock-Hard-RoundSphere-Stone-Sphere-Stone-Png-Rock-Hard-Roundpng.png") center no-repeat;
+    background-size: auto;
+}
+#Paper {
+    background: url("./images/Scroll-Parchment-Paper-Paper-Roll-PNG-Images--2png.png") center no-repeat;
+    background-size: contain;
+}
+#Scissors {
+    background: url("./images/PNG-images-Scissors-28png.png") center no-repeat;
+    background-size: contain;
+}
+.active {
+    width: 100%;
+    height: 4rem;
+}
+.alert {
+    font-weight: 600;
+    font-size: 4rem;
+}
+#reset {
+    padding: 1rem 2rem;
+    background-color: red;
+    color: yellow;
+    position: fixed;
+    top: 3rem;
+    left: 6.5rem;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 0 5px 5px black;
+}
+#reset:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform .5s ease-in-out;
+}
